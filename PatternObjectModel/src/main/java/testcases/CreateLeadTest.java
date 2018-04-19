@@ -15,18 +15,18 @@ import wdMethods.ProjectMethods;
 public class CreateLeadTest extends ProjectMethods {
 	
 	@BeforeTest
-	public void setdata(String testCaseName, String testDescription, String testNodes, String Category, String authors, String browsername, String dataSheetName ) {
+	public void setdata() {
 		
 		testCaseName = "Created Lead";
 		testDescription = "Beefore Edit the Lead you may should create this edit lead";
 		testNodes = "Lead";
-		Category="Smoke";
+		category="Smoke";
 		authors = "KANI PRABHU S";
-		browsername = "Chrome";
-		dataSheetName = "";				
+		browserName = "Chrome";
+		dataSheetName = "TC002";				
 	}
 
-	@Test(dataProvider="fetchdata")
+	@Test(dataProvider="fetchData")
 // 	@Test(dataProvider="fetchData")
 	public void createlead(String uname, String pass, String cName, String fName, String lName ) {
 		new LoginPage()
