@@ -33,8 +33,8 @@ public class CreateLeadTest extends ProjectMethods {
 		.enterUserName(uname)
 		.enterPassword(pass)
 		.clickLogIn();
-		new HomePage()
-		.clickCrmsfa();
+		//new HomePage()
+		/*.clickCrmsfa();
 		new MyHome()
 		.clickLeads();
 		new MyLeads()
@@ -43,7 +43,7 @@ public class CreateLeadTest extends ProjectMethods {
 		.typeCname(cName)
 		.typeFname(fName)
 		.typelname(lName)
-		.clickSubmitButton();
+		.clickSubmitButton();*/
 		
 		
 		
